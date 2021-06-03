@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+	<html lang="pt-br">
+	<meta charset="UTF-8">
+	<head th:replace="~{base :: head}">
+		
+				
+		<title>Cursos</title>
+	</head>
+	
+	<body>
+		
+		<nav th:replace="~{base :: navbusca}"></nav>
+		<nav th:replace="~{base :: navlinks}"></nav>
+		
+		<div class="container">
+			
+			<section class="container mt-5">
+			
+				<div class="row justify-content-between">
+				
+					<article class="card p-0 m-3 col-12 col-sm-3" style="width: 18rem;">
+					  <div class="card-body">
+					    <h5 class="card-title">Gerenciar blogs</h5>
+					    <p class="card-text">Incluir texto curto descritivo.
+					    					Incluir texto curto descritivo.
+					    					Incluir texto curto descritivo.</p>
+					    <a href="/usuario/blogs" class="btn btn-primary">Gerenciar blogs</a>
+					  </div>
+					</article>
+					
+					<article class="card p-0 m-3 col-12 col-sm-3" style="width: 18rem;">
+					  <div class="card-body">
+					    <h5 class="card-title">Lista de contatos</h5>
+					    <p class="card-text">Incluir texto curto descritivo.</p>
+					    <a href="/listarContatos" class="btn btn-primary">Listar contatos</a>
+					  </div>
+					</article>
+					
+					<article class="card p-0 m-3 col-12 col-sm-3" style="width: 18rem;">
+					  <div class="card-body">
+					    <h5 class="card-title">Cadastrar autor</h5>
+					    <p class="card-text">Salvar novo autor.</p>
+					    <a href="/novo/novoAutor" class="btn btn-primary">Cadastrar autor</a>
+					  </div>
+					</article>
+					
+					<article class="card p-0 m-3 col-12 col-sm-3" style="width: 18rem;">
+					  <div class="card-body">
+					    <h5 class="card-title">Cadastrar cursos</h5>
+					    <p class="card-text">Salvar novo curso.</p>
+					    <a href="/novo/curso" class="btn btn-primary">Cadastrar curso</a>
+					  </div>
+					</article>
+				</div>
+			</section>
+		</div>
+		
+		<footer th:replace="~{base :: rodape}"></footer>
+	</body>
+</html>

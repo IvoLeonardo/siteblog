@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+	<html lang="pt-br">
+	<meta charset="UTF-8">
+	<head th:replace="~{base :: head}">
+		
+				
+		<title>Cursos</title>
+	</head>
+	
+	<body>
+		
+		<nav th:replace="~{base :: navbusca}"></nav>
+		<nav th:replace="~{base :: navlinks}"></nav>
+		
+		<div class="container">
+			
+			<div class="row mt-5 mb-3">
+				<div class="col-sm-4">
+							
+					<ul class="list-group">
+						<li class="list-group-item"><a class="" href="#">Aula 01 - Introdução ao OKR</a></li>
+						<li class="list-group-item">AULA 02 - O objetivo</li>
+						<li class="list-group-item">Aula 03 - Os resultados chave</li>
+					</ul>
+				</div>
+				
+				<div class="ratio ratio-16x9">
+					<iframe src="https://www.youtube.com/embed/pH_HYXGXWBs" width="640" height="360" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				
+			</div>
+		</div>
+		
+		<footer th:replace="~{base :: rodape}"></footer>
+	</body>
+</html>

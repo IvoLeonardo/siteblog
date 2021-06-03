@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head th:replace="~{base :: head}">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="/rodape.css">
+		
+	</head>
+	
+	<body>
+		
+		<header>
+			<nav th:replace="~{base :: navbusca}"></nav>
+			
+			<nav th:replace="~{base :: navlinks}"></nav>
+			
+			<div class="bd-example">
+				  
+			  <div class="carousel-inner">
+			      <img src="/img/pc-estetoscopio.jpg" class="d-block w-100 imagem-carrossel-um" alt="...">
+			  </div>
+			</div>
+		</header>
+		
+		<main class="container mt-3"> 
+			
+			<nav aria-label="breadcrumb">
+			  <ol class="breadcrumb">
+			    <li class="breadcrumb-item" aria-current="page"><a href="/bloghome">Blogs</a></li>
+			    <li class="breadcrumb-item active" aria-current="page">Blog</li>
+			  </ol>
+			</nav>
+			
+			<article>
+				<div th:object="${blogObj}">
+				
+				<div sec:authorize="isAuthenticated()">
+					<nav class="navbar navbar-light bg-light d-flex justify-content-end">
+						<a th:href="@{/editarTexto/{idTexto}(idTexto=*{id})}"><button type="button" class="btn btn-outline-dark me-3">Editar</button></a>
+					</nav>
+				</div>
+				
+					<h1 class="card-title"><span th:text="*{titulo}"></span></h1>
+						
+					<p class="card-text text-muted">	
+						<span th:text="'Autor: ' + *{autor}"></span>
+						<span th:text="' | Publicado em ' + *{#temporals.format(dataPublicacao, 'dd/MM/yyyy')}"></span>
+					</p>
+					
+					<section>
+						<p class="card-text"><span th:utext="*{texto}"></span></p>
+					</section>
+							
+				</div>
+			</article>
+		</main>
+	</body>
+</html>

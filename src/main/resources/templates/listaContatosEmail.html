@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+	<html>
+	<head th:replace="~{base :: head}">
+		<meta charset="UTF-8">
+		
+		<title>Blog</title>
+	</head>
+	<body>
+		<nav th:replace="~{base :: navbusca}"></nav>
+		<nav th:replace="~{base :: navlinks}"></nav>
+		
+		<div class="container">
+		
+			<div class="row mt-5 mb-3">
+				
+					<table>
+						<tr> <th>Nome</th><th>E-mail</th><th>WhatsApp</th>
+						
+						<tr th:each="c : ${contatos.content}">
+							<td th:text="${c.nome}"></td>
+							<td th:text="${c.email}"></td>
+							<td th:text="${c.whatsApp}"></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+	</body>
+</html>

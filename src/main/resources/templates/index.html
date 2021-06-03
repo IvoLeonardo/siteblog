@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head th:replace="~{base :: head}">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="/rodape.css">
+	</head>
+	
+	<body>
+	
+		<header>
+			<nav th:replace="~{base :: navbusca}"></nav>
+			<nav th:replace="~{base :: navlinks}"></nav>
+		</header>
+			
+		<div id="carouselExampleCaptions" class="carousel slide" data-interval="3000" data-ride="carousel">
+		
+			<ol class="carousel-indicators">
+			   <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+			   <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+			   <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+			</ol>
+			
+			<div class="carousel-inner">
+				<div class="carousel-item active imagem">
+					<img src="/img/pc-estetoscopio.jpg" class="d-block w-100 imagem-carrossel-dois">
+				</div>
+				
+				<div class="carousel-item">
+					<img src="/img/circuito-placa.jpg" class="d-block w-100 imagem-carrossel-dois">
+				</div>
+				
+				<div class="carousel-item">
+					<img src="/img/solucao-ti.jpg" class="d-block w-100 imagem-carrossel-dois">
+				</div>
+			</div>
+			
+			<a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			    <span class="visually-hidden">Anterior</span>
+			  </a>
+			  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			    <span class="visually-hidden">Próximo</span>
+			  </a>
+		</div>
+		
+		<div class="container"> 
+			
+			<figure class="text-end">
+			
+			  <blockquote class="blockquote">
+			    <p>ARCANE - Wordpress -> Usar como modelo.</p>
+			  </blockquote>
+			  
+			  <figcaption class="blockquote-footer">
+			    God bless world! <cite title="Source Title">Glory to God!</cite>
+			  </figcaption>
+			</figure>
+				
+			<div class="row mb-5">
+				<div class="col-sm-4">
+					<div class="card">
+						<img class="card-img-top" src="/img/circuito-placa.jpg">
+						<div class="card-body">
+							<h4 class="card-title">O que é Liderança?</h4>
+							<h6 class="card-subtitle mb-2 text-muted">O líder é uma pessoa que inspira e guia a sua equipe. </h6>
+							<p class="card-text">
+								O termo liderança nunca esteve tão em alta como nos últimos anos. Apesar de 
+							muitos conhecerem essa palavra, nem todos entendem realmente o seu significado. 
+							No dicionário diz “relativo a líder. Comando, direção, hegemonia”. Geralmente, 
+							o líder é automaticamente associado com o chefe, mas existe uma grande diferença 
+							entre as duas funções que, no final das contas, acaba impactando diretamente no bom 
+							andamento da corporação.
+							</p>
+							<a href="#" class="card-link">Leia mais...</a>
+						</div>
+					</div>				
+				</div>
+				
+				<div class="col-sm-4">
+					<div class="card">
+						<img class="card-img-top" src="/img/pc-estetoscopio.jpg">
+						<div class="card-body">
+							<h4 class="card-title">O que é Liderança?</h4>
+							<h6 class="card-subtitle mb-2 text-muted">O líder é uma pessoa que inspira e guia a sua equipe. </h6>
+							<p class="card-text">
+								O termo liderança nunca esteve tão em alta como nos últimos anos. Apesar de 
+							muitos conhecerem essa palavra, nem todos entendem realmente o seu significado. 
+							No dicionário diz “relativo a líder. Comando, direção, hegemonia”. Geralmente, 
+							o líder é automaticamente associado com o chefe, mas existe uma grande diferença 
+							entre as duas funções que, no final das contas, acaba impactando diretamente no bom 
+							andamento da corporação.
+							</p>
+							<a href="#" class="card-link">Leia mais...</a>
+						</div>
+					</div>			
+				</div>
+				
+				<div class="col-sm-4">
+					<div class="card">
+						<img class="card-img-top" src="/img/solucao-ti.jpg">
+						<div class="card-body">
+							<h4 class="card-title">O que é Liderança?</h4>
+							<h6 class="card-subtitle mb-2 text-muted">O líder é uma pessoa que inspira e guia a sua equipe. </h6>
+							<p class="card-text">
+								O termo liderança nunca esteve tão em alta como nos últimos anos. Apesar de 
+							muitos conhecerem essa palavra, nem todos entendem realmente o seu significado. 
+							No dicionário diz “relativo a líder. Comando, direção, hegemonia”. Geralmente, 
+							o líder é automaticamente associado com o chefe, mas existe uma grande diferença 
+							entre as duas funções que, no final das contas, acaba impactando diretamente no bom 
+							andamento da corporação.
+							</p>
+							<a href="#" class="card-link">Leia mais...</a>
+						</div>
+					</div>			
+				</div>
+			</div>
+		</div>
+			
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+	    
+	</body>
+</html>
